@@ -1,0 +1,73 @@
+.dish-card {
+    width: 400px;
+    background-color: #EDEFEE;
+    border-radius: 5%/3%;
+    text-align: left;
+    overflow: hidden;
+    /* Asegura que el contenido no sobresalga del borde redondeado */
+    position: relative;
+}
+
+.dish-img img {
+    object-fit: fill;
+
+}
+
+
+
+.dish-text {
+    padding: 2rem;
+}
+
+
+
+.dish-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.price {
+    color: #EE9972;
+}
+
+
+.dish-img {
+    grid-area: dish-img;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.dish-img img {
+    flex-shrink: 0;
+    min-width: 120%;
+    min-height: 120%
+}
+
+.dish-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.7fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "dish-title"
+        "dish-description"
+        "dish-order";
+    grid-area: dish-text;
+}
+
+.dish-description {
+    grid-area: dish-description;
+}
+
+.dish-order {
+    grid-area: dish-order;
+}
+
+.dish-title {
+    grid-area: dish-title;
+}

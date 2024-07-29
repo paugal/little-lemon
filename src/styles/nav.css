@@ -1,0 +1,14 @@
+.navbar-menu {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.navbar-item {
+    list-style-type: none;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    color: inherit;
+}
