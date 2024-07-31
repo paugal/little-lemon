@@ -1,0 +1,32 @@
+.gallery {
+    display: flex;
+    gap: 50px;
+    width: 1000px;
+    justify-content: center;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.gallery img {
+    width: 400px;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    padding: 0.5rem;
+    border-radius: 2%/15%;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.datepicker-input {}
+
+.primary-button {
+    width: 350px;
+    border-radius: 2%/15%;
+}

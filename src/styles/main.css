@@ -27,6 +27,7 @@
 .banner-container {
     max-width: 1000px;
     display: flex;
+    width: 100%;
 }
 
 .banner-text {
@@ -96,6 +97,7 @@
     align-items: center;
     gap: 20%;
     justify-content: space-around;
+    margin-bottom: 2rem;
 }
 
 .weeks-specials-details {
