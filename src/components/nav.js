@@ -9,21 +9,13 @@ export default function Nav() {
         <li className="navbar-item">
           <Link to="/">Home</Link>
         </li>
-        <li className="navbar-item">
-          <Link to="/about">About</Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/menu">Menu</Link>
-        </li>
+        <li className="navbar-item">About</li>
+        <li className="navbar-item">Menu</li>
         <li className="navbar-item">
           <Link to="/reservations">Reservations</Link>
         </li>
-        <li className="navbar-item">
-          <Link to="/order">Order Online</Link>
-        </li>
-        <li className="navbar-item">
-          <Link to="/login">Login</Link>
-        </li>
+        <li className="navbar-item">Order Online</li>
+        <li className="navbar-item">Login</li>
       </ul>
     </nav>
   );

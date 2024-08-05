@@ -5,6 +5,7 @@ import salad from "../assets/greek salad.jpg";
 import bruchetta from "../assets/bruchetta.svg";
 import lemonDessert from "../assets/lemon dessert.jpg";
 import DishCard from "./dishCard";
+import { Link } from "react-router-dom";
 
 export default function main() {
   return (
@@ -19,7 +20,9 @@ export default function main() {
               traditional recepis served with a modern twist
             </p>
             <button className="primary-button karla-specials">
-              Reserve a Table
+              <Link className="noStyleLink" to="/reservations">
+                Reserve a Table
+              </Link>
             </button>
           </div>
           <div className="banner-image">

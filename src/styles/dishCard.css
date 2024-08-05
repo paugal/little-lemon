@@ -4,8 +4,8 @@
     border-radius: 5%/3%;
     text-align: left;
     overflow: hidden;
-    /* Asegura que el contenido no sobresalga del borde redondeado */
     position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .dish-img img {

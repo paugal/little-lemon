@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.noStyleLink {
+  text-decoration: none;
+  color: inherit;
+}
+
 .headerNav {
   display: flex;
   justify-content: center;

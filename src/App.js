@@ -3,9 +3,10 @@ import { Footer, Header, Main, Nav } from "./components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BookingPage from "./components/bookingPage";
 import { useState, useReducer, useEffect } from "react";
-import { fetchAPI, submitAPI } from "./utils/fakeAPI";
+import { fetchAPI } from "./utils/fakeAPI";
+import { FormProvider } from "./context/FormContext";
 
-function timesReducer(state, action) {
+export function timesReducer(state, action) {
   switch (action.type) {
     case "UPDATE_TIMES":
       return action.times;
@@ -14,7 +15,7 @@ function timesReducer(state, action) {
   }
 }
 
-async function initializeTimes() {
+export async function initializeTimes() {
   const today = new Date().toISOString().split("T")[0]; // Fecha de hoy en formato 'YYYY-MM-DD'
   const times = await fetchAPI(today);
   return times;
@@ -50,10 +51,12 @@ function App() {
           <Route
             path="reservations"
             element={
-              <BookingPage
-                availableTimes={availableTimes}
-                updateTimes={updateTimes}
-              ></BookingPage>
+              <FormProvider>
+                <BookingPage
+                  availableTimes={availableTimes}
+                  updateTimes={updateTimes}
+                ></BookingPage>
+              </FormProvider>
             }
           />
           <Route path="about" element={<div>About Page</div>} />

@@ -11,9 +11,27 @@ const fetchAPI = (dateString) => {
   let result = [];
   let random = seededRandom(date.getDate());
 
+  const today = new Date();
+  const isToday = date.toDateString() === today.toDateString(); // Verificar si la fecha es hoy
+  const currentHour = today.getHours();
+  const currentMinutes = today.getMinutes();
+
   for (let i = 17; i <= 23; i++) {
-    if (random() < 0.5) result.push(i + ":00");
-    if (random() < 0.5) result.push(i + ":30");
+    // Si es hoy, verificar que la hora no sea anterior a la hora actual
+    if (
+      !isToday ||
+      i > currentHour ||
+      (i === currentHour && currentMinutes < 30)
+    ) {
+      if (random() < 0.5) result.push(i + ":00");
+    }
+    if (
+      !isToday ||
+      i > currentHour ||
+      (i === currentHour && currentMinutes < 0)
+    ) {
+      if (random() < 0.5) result.push(i + ":30");
+    }
   }
 
   return result;

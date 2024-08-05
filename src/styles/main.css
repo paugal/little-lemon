@@ -49,6 +49,16 @@
     width: 200px;
     height: 50px;
     border-radius: 5%/15%;
+    transition: all 600ms ease;
+}
+
+.primary-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.noStyleLink {
+    text-decoration: none;
+    color: inherit;
 }
 
 .banner-imgae {
@@ -95,9 +105,13 @@
     grid-area: title-week-specials;
     display: flex;
     align-items: center;
-    gap: 20%;
-    justify-content: space-around;
+    gap: 10%;
+    justify-content: space-between;
     margin-bottom: 2rem;
+}
+
+.title-week-specials button {
+    margin: 0%;
 }
 
 .weeks-specials-details {

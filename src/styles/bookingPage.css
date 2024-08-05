@@ -1,3 +1,17 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+.bannerBooking {
+    margin-bottom: 0rem;
+    padding-bottom: 5rem;
+}
+
+
+
 .gallery {
     display: flex;
     gap: 50px;
@@ -24,9 +38,18 @@
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
-.datepicker-input {}
-
 .primary-button {
     width: 350px;
     border-radius: 2%/15%;
+}
+
+.confirmed-booking p {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.cancel-button {
+    background-color: rgb(216, 15, 15);
+    color: white;
 }
