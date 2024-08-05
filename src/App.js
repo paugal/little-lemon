@@ -38,7 +38,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="little-lemon">
       <div className="App">
         <div className="headerNav">
           <div className="headerNav-container">
