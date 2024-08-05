@@ -19,11 +19,11 @@ export default function main() {
               We are a family owned Mediterranean restaurant, focused on
               traditional recepis served with a modern twist
             </p>
-            <button className="primary-button karla-specials">
-              <Link className="noStyleLink" to="/reservations">
+            <Link className="noStyleLink" to="/reservations">
+              <button className="primary-button karla-specials">
                 Reserve a Table
-              </Link>
-            </button>
+              </button>
+            </Link>
           </div>
           <div className="banner-image">
             <img src={bannerImg} alt="bannerImage" />

@@ -6,7 +6,7 @@
 .landing-page {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.70fr 1fr;
+    grid-template-rows: 0.5fr 0.9fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -21,6 +21,7 @@
     grid-area: banner;
     display: flex;
     justify-content: center;
+    padding-bottom: 3rem;
     margin-bottom: 5rem;
 }
 
@@ -54,6 +55,7 @@
 
 .primary-button:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
 }
 
 .noStyleLink {
@@ -89,6 +91,7 @@
         "title-week-specials"
         "weeks-specials-details";
     grid-area: week-specials;
+    margin-bottom: 5rem;
 }
 
 .week-specials-container {
